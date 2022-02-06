@@ -898,7 +898,7 @@ ul li {
     text-align: center;
     height: auto;
     margin: 0 auto;
-    color: black;
+    color: whitesmoke;
 }
 
 @media (max-width: 1200px) {
