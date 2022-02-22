@@ -899,6 +899,7 @@ ul li {
     height: auto;
     margin: 0 auto;
     color: whitesmoke;
+    font-weight: bold;
 }
 
 @media (max-width: 1200px) {
@@ -1086,7 +1087,7 @@ ul li {
     padding-top: 10px;
 }
 
-#registerButton:hover{
+/* #registerButton:hover{
     transform: unset !important;
     cursor: not-allowed !important;
-}
+} */
