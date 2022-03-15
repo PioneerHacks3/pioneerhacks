@@ -888,6 +888,42 @@ ul li {
 }
 
 /*
+ph3 sponsors
+*/
+
+.sponsor-wolfram {
+    background: url(../../assets/images/sponsors/wolfram.png) no-repeat center center/contain, url(../../assets/images/sponsors/wolfram.png) no-repeat center center/contain;
+}
+
+.sponsor-linode {
+    background: url(../../assets/images/sponsors/linode.png) no-repeat center center/contain, url(../../assets/images/sponsors/linode.png) no-repeat center center/contain;
+}
+
+.sponsor-leangap {
+    background: url(../../assets/images/sponsors/leangap.png) no-repeat center center/contain, url(../../assets/images/sponsors/leangap.png) no-repeat center center/contain;
+}
+
+.sponsor-interviewcake {
+    background: url(../../assets/images/sponsors/interviewcake.png) no-repeat center center/contain, url(../../assets/images/sponsors/interviewcake.png) no-repeat center center/contain;
+}
+
+.sponsor-aops {
+    background: url(../../assets/images/sponsors/aops.png) no-repeat center center/contain, url(../../assets/images/sponsors/aops.png) no-repeat center center/contain;
+}
+
+.sponsor-balsamiq {
+    background: url(../../assets/images/sponsors/balsamiq.png) no-repeat center center/contain, url(../../assets/images/sponsors/balsamiq.png) no-repeat center center/contain;
+}
+
+.sponsor-echoAR {
+    background: url(../../assets/images/sponsors/echoAR.png) no-repeat center center/contain, url(../../assets/images/sponsors/echoAR.png) no-repeat center center/contain;
+}
+
+.sponsor-grokker {
+    background: url(../../assets/images/sponsors/grokker.svg) no-repeat center center/contain, url(../../assets/images/sponsors/grokker.svg) no-repeat center center/contain;
+}
+
+/*
  * 6.8 Section: FAQ
  */
 
