@@ -90,7 +90,7 @@
         font-size: 3vw;
     }
 
-    #registerButton, #devpostButton {
+    .headerButton {
         height: 10vh;
         width: 50vw;
         font-size: 1em;
