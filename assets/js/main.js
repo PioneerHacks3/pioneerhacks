@@ -1,7 +1,7 @@
 /* FAQ */
 var coll = document.getElementsByClassName("collapsible");
 for (var i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
+    coll[i].addEventListener("click", function() {
         this.classList.toggle("active1");
         var content = this.nextElementSibling;
         if (content.style.maxHeight) {
@@ -12,21 +12,21 @@ for (var i = 0; i < coll.length; i++) {
     });
 }
 
-let regCLicked = false;
+let regClicked = false;
 
-$(document).ready(function () {
-    $("#registerButton").click(function (e) {
+$(document).ready(function() {
+    $("#registerButton").click(function(e) {
         e.preventDefault();
         return;
         $('#faq8').removeClass('hover');
         $('#faq8').addClass('hover');
-        regCLicked = true;
+        regClicked = true;
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#faq8").offset().top
         }, 10);
     });
     $('[data-toggle="tooltip"]').tooltip();
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         if ($(this).scrollTop()) {
             $('#toTop').fadeIn();
         } else {
@@ -34,15 +34,15 @@ $(document).ready(function () {
         }
     });
 
-    $("#toTop").click(function () {
-        $("html, body").animate({scrollTop: 0}, 1500);
+    $("#toTop").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, 1500);
         return false;
     });
 
 
     $('#faq8').addClass('hover');
-    setTimeout(function () {
-        if(regCLicked){
+    setTimeout(function() {
+        if (regClicked) {
             return;
         }
         $('#faq8').removeClass('hover');
@@ -60,10 +60,11 @@ var confetti_colors = [
     '#0B7285',
     '#15AABF',
     '#EE1233',
-    '#40C057'];
+    '#40C057'
+];
 
 var confettis_conf = [
-// 1
+    // 1
     {
         angle: 270,
         spread: 45,
@@ -73,7 +74,7 @@ var confettis_conf = [
         colors: confetti_colors
     },
 
-// 2
+    // 2
     {
         angle: 270,
         spread: 90,
@@ -83,7 +84,7 @@ var confettis_conf = [
         colors: confetti_colors
     },
 
-// 3
+    // 3
     {
         angle: 90,
         spread: 180,
@@ -93,7 +94,7 @@ var confettis_conf = [
         colors: confetti_colors
     },
 
-// 4
+    // 4
     {
         angle: 90,
         spread: 270,
@@ -103,7 +104,7 @@ var confettis_conf = [
         colors: confetti_colors
     },
 
-// 5
+    // 5
     {
         angle: 90,
         spread: 360,
@@ -111,12 +112,13 @@ var confettis_conf = [
         elementCount: 150,
         decay: 0.82,
         colors: confetti_colors
-    }];
+    }
+];
 
 
 var buttons = Array.from(document.querySelectorAll('[data-fun]'));
-buttons.forEach(function (button) {
-    button.addEventListener('click', function (e) {
+buttons.forEach(function(button) {
+    button.addEventListener('click', function(e) {
         e.preventDefault();
         window.confetti(button.children[0], confettis_conf[button.getAttribute('data-fun')]);
     });
@@ -124,13 +126,13 @@ buttons.forEach(function (button) {
 
 /*
  * Change Navbar color while scrolling
-*/
+ */
 
-$(window).scroll(function () {
+$(window).scroll(function() {
     handleTopNavAnimation();
 });
 
-$(window).load(function () {
+$(window).load(function() {
     handleTopNavAnimation();
 });
 
@@ -146,9 +148,9 @@ function handleTopNavAnimation() {
 
 /*
  * Registration Form
-*/
+ */
 
-$('#registration-form').submit(function (e) {
+$('#registration-form').submit(function(e) {
     e.preventDefault();
 
     var postForm = { //Fetch form data
@@ -167,7 +169,7 @@ $('#registration-form').submit(function (e) {
         url: './assets/php/contact.php',
         data: postForm,
         dataType: 'json',
-        success: function (data) {
+        success: function(data) {
             if (data.success) {
                 $('#registration-msg .alert').html("Registration Successful");
                 $('#registration-msg .alert').removeClass("alert-danger");
@@ -185,6 +187,26 @@ $('#registration-form').submit(function (e) {
 
 /*
  * SmoothScroll
-*/
+ */
 
 smoothScroll.init();
+
+/*
+tabular schedule
+*/
+function openDay(evt, dayName) {
+    var content = document.getElementsByClassName("day_content");
+    for (let i = 0; i < content.length; i++) {
+        content[i].style.display = "none";
+    }
+
+    var tabs = document.getElementsByClassName("day_switcher");
+    for (let i = 0; i < tabs.length; i++) {
+        tabs[i].className = tabs[i].className.replace(" active", "");
+    }
+
+    document.getElementById(dayName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultTab").click();
