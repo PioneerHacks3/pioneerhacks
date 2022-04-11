@@ -987,6 +987,14 @@ ph3 sponsors
     background: url(../../assets/images/sponsors/grokker.svg) no-repeat center center/contain, url(../../assets/images/sponsors/grokker.svg) no-repeat center center/contain;
 }
 
+.sponsor-stanfordmedicine {
+    background: url(../../assets/images/sponsors/stanfordmedicine.png) no-repeat center center/contain, url(../../assets/images/sponsors/stanfordmedicine.png) no-repeat center center/contain;
+}
+
+.sponsor-BAYCO {
+    background: url(../../assets/images/sponsors/bayco.png) no-repeat center center/contain, url(../../assets/images/sponsors/bayco.png) no-repeat center center/contain;
+}
+
 
 /*
  * 6.8 Section: FAQ
