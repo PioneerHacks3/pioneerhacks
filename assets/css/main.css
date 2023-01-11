@@ -1202,8 +1202,25 @@ ph3 sponsors
     max-height: 10vw;
 }
 
-
-#registerButton:hover{
+#notAllowed:hover{
     transform: unset !important;
     cursor: not-allowed !important;
 } 
+
+#expand-section{
+    background-color: #c4e4e7;
+    border: none;
+}
+
+#expand-icon{
+    color:#000 !important;
+    font-size:30px !important;
+}
+
+#expand-icon::after{
+    content: '\02795';
+}
+
+#expand-section[aria-expanded="true"] #expand-icon::after{
+    content: "\2796";
+}
