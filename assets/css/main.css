@@ -995,6 +995,13 @@ ph3 sponsors
     background: url(../../assets/images/sponsors/bayco.png) no-repeat center center/contain, url(../../assets/images/sponsors/bayco.png) no-repeat center center/contain;
 }
 
+/*
+* ph4 sponsors
+*/
+.sponsor-juniper{
+    background: url(../../assets/images/ph4-sponsors/Juniper.png) no-repeat center center/contain, url(../../assets/images/ph4-sponsors/Juniper.png) no-repeat center center/contain;
+}
+
 
 /*
  * 6.8 Section: FAQ
