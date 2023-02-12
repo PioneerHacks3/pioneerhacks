@@ -1006,6 +1006,15 @@ ph3 sponsors
     background: url(../../assets/images/ph4-sponsors/leangap.png) no-repeat center center/contain, url(../../assets/images/sponsors/leangap.png) no-repeat center center/contain;
 }
 
+.sponsor-zealtech {
+    background: url(../../assets/images/ph4-sponsors/zealtech.JPG) no-repeat center center/contain, url(../../assets/images/sponsors/zealtech.jpg) no-repeat center center/contain;
+}
+
+.smaller .partner-box {
+    width: 200px;
+    height: 200px;
+}
+
 /*
  * 6.8 Section: FAQ
  */
