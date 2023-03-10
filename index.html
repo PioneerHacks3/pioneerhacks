@@ -32,7 +32,10 @@
     <link href="assets/css/mobilecss.css" rel="stylesheet">
     <link href="assets/css/animations1.css" rel="stylesheet">
     <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/notice.css" rel="stylesheet">
     <link href="assets/images/logo/hat-01.png" rel="prefetch" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <!--
 Cool stuff that we could add
@@ -42,6 +45,15 @@ animation on scroll: https://codepen.io/simoncodrington/pen/Mwgqqd
 -->
 
 <body data-spy="scroll" data-target="#site-nav">
+    <div id="hellobar-bar" class="regular closable">
+        <div class="hb-content-wrapper">
+            <div class="hb-text-wrapper">
+                <div class="hb-headline-text">
+                    <p><span>Check out our partner hackathon, <a href="https://www.losaltoshacks.com/" style="text-decoration: none; color:whitesmoke;"><b>Los Altos Hacks VII!</b></a></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <nav class="navbar navbar-fixed-top navbar-custom" id="site-nav">
         <div class="container">
             <div class="navbar-header">
@@ -80,7 +92,6 @@ animation on scroll: https://codepen.io/simoncodrington/pen/Mwgqqd
             </div>
         </div>
     </nav>
-
     <header class="site-header valign-center" id="site-header" style="overflow: hidden;">
 
         <img alt="Cowboy Hat Sliding In" class="animated bounceInUp slow delay-1s" id="logo-anim" src="assets/images/logo/hat-01.png" style="
