@@ -2,6 +2,9 @@
     .navbar-fixed-top {
         position: static;
     }
+    .navbar-custom {
+        margin: 0 !important;
+    }
 }
 body{
     margin: 0;
