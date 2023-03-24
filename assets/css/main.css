@@ -1249,3 +1249,13 @@ ph3 sponsors
 #expand-section[aria-expanded="true"] #expand-icon::after{
     content: "\2796";
 }
+
+#grayedOutButton:hover {
+    transform: unset !important;
+    cursor: not-allowed !important;
+}
+
+#grayedOutButton {
+    color: #666 !important;
+    background-color: #ecebeb !important;
+}
